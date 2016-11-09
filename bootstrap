@@ -1,0 +1,75 @@
+<section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow">
+      
+    <div class="fullscreen-bg">
+        <video loop="" muted="" autoplay="" poster="http://baden-antonsgasse.com/assets/mitras-project-start.jpg" class="fullscreen-bg__video">
+            <source src="http://baden-antonsgasse.com/assets/mitras-project-start.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    
+    <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(0, 0, 0);"></div>
+
+
+    <div class="mbr-table-cell">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="mbr-section col-md-10 col-md-offset-1 text-xs-center">
+
+
+                    <h1 class="mbr-section-title display-1 mbr-editable-content">FULL SCREEN VIDEO</h1>
+                    <p class="mbr-section-lead lead mbr-editable-content">just an upload from the server</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mbr-arrow mbr-arrow-floating" aria-hidden="true"><a href="#next"><i class="mbr-arrow-icon"></i></a></div>
+
+
+</section>
+
+
+
+
+
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+}
+
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('http://baden-antonsgasse.com/assets/mitras-project-start.jpg') center center / cover no-repeat;
+    }
+
+
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
